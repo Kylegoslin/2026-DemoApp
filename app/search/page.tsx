@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 // app/page.tsx
 export default function Home() {
   return (
@@ -11,6 +13,16 @@ export default function Home() {
       <div className="card">
         <h2>Search</h2>
         <p>Welcome to the app.</p>
+
+
+          <Image
+                        src="/gnu.png"
+                        width={200}
+                        height={200}
+                        alt="Picture of the author"
+                        />
+        
+
       </div>
     </section>
   );

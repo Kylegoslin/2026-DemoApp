@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 64, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/2026-DemoApp/app/api/test/route.tsx"],"sourcesContent":["\nimport { NextResponse } from \"next/server\";\nimport PocketBase from \"pocketbase\";\nimport { db, authenticate } from \"@/lib/database\";\n\nexport async function GET() {\n\n\n  try{  // Create a new record in the \"test\" collection\n    const record = await pb.collection(\"products\").create({\n      description: \"This is a test record created via API route.\",\n      price: 9.99,\n    });\n  \n  } catch (error) {\n    console.error(\"Error creating test record:\", error);\n    return NextResponse.json({ error: \"Failed to create test record\" }, { status: 500 });\n  }\n\n  return NextResponse.json({ message: \"Test record created successfully\" });\n} \n"],"names":["GET","record","pb","collection","create","description","price","error","console","json","status","message"],"mappings":";;;;AACA;;AAIO,eAAeA;IAGpB,IAAG;QACD,MAAMC,SAAS,MAAMC,GAAGC,UAAU,CAAC,YAAYC,MAAM,CAAC;YACpDC,aAAa;YACbC,OAAO;QACT;IAEF,EAAE,OAAOC,OAAO;QACdC,QAAQD,KAAK,CAAC,+BAA+BA;QAC7C,OAAO,gJAAY,CAACE,IAAI,CAAC;YAAEF,OAAO;QAA+B,GAAG;YAAEG,QAAQ;QAAI;IACpF;IAEA,OAAO,gJAAY,CAACD,IAAI,CAAC;QAAEE,SAAS;IAAmC;AACzE"}}]
+}

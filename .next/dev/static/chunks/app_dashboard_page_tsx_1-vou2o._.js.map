@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/2026-DemoApp/app/dashboard/page.tsx"],"sourcesContent":["'use client';\nimport { auth } from \"@clerk/nextjs/server\";\n\nimport { useUser } from \"@clerk/nextjs\";\n\nexport default async function DashboardPage() {\n  const { userId, isAuthenticated, redirectToSignIn } = await auth();\n\n\n  if (!isAuthenticated) {\n    return redirectToSignIn();\n  }\n\n\n    const { user, isLoaded } = useUser();\n    console.log(user?.firstName)\n\n  return (\n    <div>\n      <h1>Dashboard</h1>\n      <p>Logged in as: {userId}</p>\n    </div>\n  );\n}\n"],"names":["DashboardPage","userId","isAuthenticated","redirectToSignIn","user","isLoaded","console","log","firstName"],"mappings":";;;;;AACA;AAEA;;;AAHA;;;AAKe,eAAeA;;IAC5B,MAAM,EAAEC,MAAM,EAAEC,eAAe,EAAEC,gBAAgB,EAAE,GAAG,MAAM,IAAA,8LAAI;IAGhE,IAAI,CAACD,iBAAiB;QACpB,OAAOC;IACT;IAGE,MAAM,EAAEC,IAAI,EAAEC,QAAQ,EAAE,GAAG,IAAA,0OAAO;IAClCC,QAAQC,GAAG,CAACH,MAAMI;IAEpB,qBACE,6LAAC;;0BACC,6LAAC;0BAAG;;;;;;0BACJ,6LAAC;;oBAAE;oBAAeP;;;;;;;;;;;;;AAGxB;GAlB8BD;;QASC,0OAAO;;;KATRA"}}]
+}

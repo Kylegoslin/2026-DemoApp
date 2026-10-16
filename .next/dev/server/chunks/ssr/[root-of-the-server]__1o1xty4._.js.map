@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/2026-DemoApp/app/dashboard/page.tsx"],"sourcesContent":["\nimport { auth } from \"@clerk/nextjs/server\";\n\nimport { useUser } from \"@clerk/nextjs\";\nimport { currentUser } from \"@clerk/nextjs/server\";\n\n\nexport default async function DashboardPage() {\n  const { userId, isAuthenticated, redirectToSignIn } = await auth();\n\n\n  if (!isAuthenticated) {\n    return redirectToSignIn();\n  }\n\n\n    const { user, isLoaded } = useUser();\n  \n\n  return (\n    <div>\n      <h1>Dashboard</h1>\n      <p>Logged in as: {userId}</p>\n    </div>\n  );\n}\n"],"names":["DashboardPage","userId","isAuthenticated","redirectToSignIn","user","isLoaded"],"mappings":";;;;;AACA;AAEA;;;;AAIe,eAAeA;IAC5B,MAAM,EAAEC,MAAM,EAAEC,eAAe,EAAEC,gBAAgB,EAAE,GAAG,MAAM,IAAA,2LAAI;IAGhE,IAAI,CAACD,iBAAiB;QACpB,OAAOC;IACT;IAGE,MAAM,EAAEC,IAAI,EAAEC,QAAQ,EAAE,GAAG,IAAA,0LAAO;IAGpC,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;;oBAAE;oBAAeJ;;;;;;;;;;;;;AAGxB"}},
+    {"offset": {"line": 63, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/2026-DemoApp/app/favicon.ico.mjs%20(structured%20image%20object)"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,mIAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 112, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/2026-DemoApp/proxy.ts"],"sourcesContent":["import { clerkMiddleware } from '@clerk/nextjs/server';\n\nexport default clerkMiddleware();\n\nexport const config = {\n  matcher: [\n    // Skip Next.js internals and all static files, unless found in search params\n    '/((?!_next|[^?]*\\\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',\n    // Always run for Clerk's auto-proxy path\n    '/__clerk/:path*',\n    // Always run for API routes\n    '/(api|trpc)(.*)',\n  ],\n};"],"names":["config","matcher"],"mappings":";;;;;;AAAA;;uCAEe,IAAA,gMAAe;AAEvB,MAAMA,SAAS;IACpBC,SAAS;QACP,6EAA6E;QAC7E;QACA,yCAAyC;QACzC;QACA,4BAA4B;QAC5B;KACD;AACH"}}]
+}
