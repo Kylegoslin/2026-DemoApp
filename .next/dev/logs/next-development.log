@@ -1,23 +1,17 @@
-{"timestamp":"00:00:01.031","source":"Server","level":"LOG","message":"- Experiments (use with caution):"}
-{"timestamp":"00:00:01.032","source":"Server","level":"LOG","message":"  · serverActions"}
-{"timestamp":"00:00:01.032","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:07.232","source":"Server","level":"LOG","message":"Attention: Clerk collects telemetry data from its SDKs when connected to development instances."}
-{"timestamp":"00:00:07.236","source":"Server","level":"LOG","message":"The data collected is used to inform Clerk's product roadmap."}
-{"timestamp":"00:00:07.236","source":"Server","level":"LOG","message":"To learn more, including how to opt-out from the telemetry program, visit: https://clerk.com/docs/telemetry."}
-{"timestamp":"00:00:07.236","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:07.555","source":"Server","level":"LOG","message":"PocketBase URL: \"http://127.0.0.1:8090\""}
-{"timestamp":"00:00:07.558","source":"Server","level":"LOG","message":"Superuser email configured: true"}
-{"timestamp":"00:00:07.566","source":"Server","level":"LOG","message":"PocketBase health: {}"}
-{"timestamp":"00:00:07.847","source":"Server","level":"ERROR","message":"PocketBase error: ClientResponseError 400: Failed to authenticate."}
-{"timestamp":"00:01:58.730","source":"Server","level":"LOG","message":"  Reload env: .env.local"}
-{"timestamp":"00:02:05.611","source":"Server","level":"LOG","message":"  Reload env: .env.local"}
-{"timestamp":"00:02:10.054","source":"Server","level":"LOG","message":"PocketBase URL: \"http://127.0.0.1:8090\""}
-{"timestamp":"00:02:10.054","source":"Server","level":"LOG","message":"Superuser email configured: true"}
-{"timestamp":"00:02:10.058","source":"Server","level":"LOG","message":"PocketBase health: {}"}
-{"timestamp":"00:03:15.701","source":"Server","level":"LOG","message":"PocketBase URL: \"http://127.0.0.1:8090\""}
-{"timestamp":"00:03:15.701","source":"Server","level":"LOG","message":"Superuser email configured: true"}
-{"timestamp":"00:03:16.821","source":"Server","level":"LOG","message":"PocketBase URL: \"http://127.0.0.1:8090\""}
-{"timestamp":"00:03:16.821","source":"Server","level":"LOG","message":"Superuser email configured: true"}
-{"timestamp":"00:03:26.882","source":"Server","level":"LOG","message":"PocketBase URL: \"http://127.0.0.1:8090\""}
-{"timestamp":"00:03:26.882","source":"Server","level":"LOG","message":"Superuser email configured: true"}
-{"timestamp":"00:07:04.359","source":"Server","level":"LOG","message":"  Reload env: .env.local"}
+{"timestamp":"00:00:19.414","source":"Server","level":"LOG","message":"- Experiments (use with caution):"}
+{"timestamp":"00:00:19.414","source":"Server","level":"LOG","message":"  · serverActions"}
+{"timestamp":"00:00:19.414","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:23.031","source":"Server","level":"LOG","message":"Attention: Clerk collects telemetry data from its SDKs when connected to development instances."}
+{"timestamp":"00:00:23.040","source":"Server","level":"LOG","message":"The data collected is used to inform Clerk's product roadmap."}
+{"timestamp":"00:00:23.040","source":"Server","level":"LOG","message":"To learn more, including how to opt-out from the telemetry program, visit: https://clerk.com/docs/telemetry."}
+{"timestamp":"00:00:23.041","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:26.836","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:00:32.179","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:32.184","source":"Server","level":"ERROR","message":"⨯ \"upstream image response failed for\" \"https://tudublin11.b-cdn.net/icon_aE3ARq5Qudp3i6Ty-5dNtqpE3xtLwyfoWVviXshG_9o%3D.png\" 403"}
+{"timestamp":"00:00:32.366","source":"Browser","level":"WARN","message":"Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview"}
+{"timestamp":"00:00:32.398","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mClerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview\\u001b[39m\" \"\\u001b[2m(https://touching-kit-4054.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:40:1032)\\u001b[22m\""}
+{"timestamp":"00:00:43.054","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:43.211","source":"Browser","level":"WARN","message":"Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview"}
+{"timestamp":"00:00:43.212","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mClerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview\\u001b[39m\" \"\\u001b[2m(https://touching-kit-4054.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:40:1032)\\u001b[22m\""}
+{"timestamp":"00:00:55.577","source":"Server","level":"ERROR","message":"ClientResponseError 400: Failed to authenticate."}
+{"timestamp":"00:01:18.315","source":"Server","level":"LOG","message":"  Reload env: .env.local"}

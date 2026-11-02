@@ -59,34 +59,10 @@ var mod = __turbopack_context__.x("node:stream", () => require("node:stream"));
 
 module.exports = mod;
 }),
-"[project]/app/api/test/route.tsx [app-route] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
+"[project]/app/api/test/route.tsx [app-route] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-__turbopack_context__.s([
-    "GET",
-    ()=>GET
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/server.js [app-route] (ecmascript)");
-;
-async function GET() {
-    try {
-        const record = await pb.collection("products").create({
-            description: "This is a test record created via API route.",
-            price: 9.99
-        });
-    } catch (error) {
-        console.error("Error creating test record:", error);
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            error: "Failed to create test record"
-        }, {
-            status: 500
-        });
-    }
-    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-        message: "Test record created successfully"
-    });
-}
+var e = new Error("Could not parse module '[project]/app/api/test/route.tsx', file not found");
+e.code = 'MODULE_UNPARSABLE';
+throw e;
 }),
 ];
-
-//# sourceMappingURL=%5Broot-of-the-server%5D__1bmti3a._.js.map
