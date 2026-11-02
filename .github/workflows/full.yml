@@ -40,11 +40,6 @@ jobs:
           npm run dev -- --host 127.0.0.1 > /tmp/dev-server.log 2>&1 &
           echo $! > /tmp/dev-server.pid
 
-      - name: Wait for server to be ready
-        run: |
-          npx --yes wait-on \
-            --timeout 120000 \
-            http-get://127.0.0.1:3000
 
       - name: Run Playwright tests
         run: npx playwright test
