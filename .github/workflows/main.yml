@@ -37,11 +37,7 @@ jobs:
         run: |
           npm run dev -- --hostname 127.0.0.1 &
 
-      - name: Wait for server
-        run: |
-          npx --yes wait-on \
-            --timeout 120000 \
-            http-get://127.0.0.1:3000
+
 
       - name: Run Playwright tests
         run: npx playwright test
