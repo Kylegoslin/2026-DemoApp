@@ -40,20 +40,15 @@ jobs:
           npm run dev -- --host 127.0.0.1 > /tmp/dev-server.log 2>&1 &
           echo $! > /tmp/dev-server.pid
 
-      - name: Wait for server to be ready
-        run: |
-          npx --yes wait-on \
-            --timeout 120000 \
-            http-get://127.0.0.1:3000
 
       - name: Run Playwright tests
         run: npx playwright test
         env:
           BASE_URL: http://127.0.0.1:3000
-
-      - name: Show server logs on failure
-        if: failure()
-        run: cat /tmp/dev-server.log
+      - name: Check generated report
+        if: ${{ !cancelled() }}
+        run: |
+          ls -lah playwright-report/ || true
 
       - name: Upload Playwright report
         if: ${{ !cancelled() }}
@@ -62,5 +57,6 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
-          if-no-files-found: ignore
+          if-no-files-found: error
 
+      
